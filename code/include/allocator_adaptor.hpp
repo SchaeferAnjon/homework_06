@@ -6,7 +6,7 @@
 #include <climits>
 #include <limits>
 
-namespace numa {
+namespace numa { //numa 非一致内存访问架构
 template <typename T, typename A = std::allocator<T>>
 class default_init_allocator : public A {
   // Implementation taken from https://stackoverflow.com/a/21028912
